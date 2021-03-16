@@ -29,9 +29,27 @@ increase as `vehicle_length` and `ground_clearance` increase:
 
 | Parameter        | Linear Model Coefficient |
 | -----------      | -----------              |
-| vehicle_length   | 6.267e+00    |
-| ground_clearance | 3.546e+00    |
+| vehicle_length   | 6.267e+00                |
+| ground_clearance | 3.546e+00                |
 
 Finally, we see from the multiple r-squared value of 0.71 that this linear
 model that this linear model will predict the mpg of MechaCar prototypes
 roughly 71% of the time.
+
+## Summary Statistics on Suspension Coils
+Next, we generate summary statistics for the pounds per square inch (PSI) of
+the suspension coils for each vehicle contained in
+[`Suspension_Coils.csv`](Resources/Suspension_Coils.csv). Considering the data
+set as a whole, we find the following:
+
+![Total Summary](Images/total_summary.png)
+
+We then group the vehicles by their `Manufacturing_Lot` to obtain the summary
+below:
+
+![Lot Summary](Images/lot_summary.png)
+
+Considering a maximum suspension coil weight variance of 100 PSI, we find that
+while all manufacturing lots as a group meet this requirement with variance of
+62.29 PSI, the breakdown by individual lots shows that `Lot2` exceeds this
+threshold with a variance of 170.29 PSI.

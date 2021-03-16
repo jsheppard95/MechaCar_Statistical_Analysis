@@ -2,8 +2,8 @@
 R script files for statistical analysis of car manufacturing data to identify
 predictive variables of fuel efficiency, collect summary statistics on
 suspension loads, and analyze the statistical differences among specific
-manufacturing lots relative to the entire population.
-
+manufacturing lots relative to the population.
+ 
 ## Linear Regression to Predict MPG
 We first create a linear model for data found in
 [`MechaCar_mpg.csv`](Resources/MechaCar_mpg.csv), considering the fuel
@@ -15,17 +15,17 @@ integer for "All Wheel Drive"). This results in the following model:
 
 Considering a 5% significance level, we thus see from our model summary above
 that the following parameters generate a non-random amount of variance to the
-mpg data:
+`mpg` data:
 
-| Parameter        | p-value     |
-| -----------      | ----------- |
-| vehicle_length   | 2.60e-12    |
-| ground_clearance | 5.21e-08    |
+| Parameter          | p-value     |
+| -----------        | ----------- |
+| `vehicle_length`   | 2.60e-12    |
+| `ground_clearance` | 5.21e-08    |
 
-while the linear relationship to the other parameters in this data set is
-likely due to chance. In addition, we find see from the coeffients that
-the slope of this model is non-zero, instead that `mpg` tends to
-increase as `vehicle_length` and `ground_clearance` increase:
+By contrast, the linear relationship to the other parameters in this data set
+is likely due to chance. In addition, we see from the coefficients that the
+slope of this model is non-zero. Instead, `mpg` tends to increase as
+`vehicle_length` and `ground_clearance` increase:
 
 | Parameter        | Linear Model Coefficient |
 | -----------      | -----------              |
@@ -33,8 +33,7 @@ increase as `vehicle_length` and `ground_clearance` increase:
 | ground_clearance | 3.546e+00                |
 
 Finally, we see from the multiple r-squared value of 0.71 that this linear
-model that this linear model will predict the mpg of MechaCar prototypes
-roughly 71% of the time.
+model will predict the mpg of MechaCar prototypes roughly 71% of the time.
 
 ## Summary Statistics on Suspension Coils
 Next, we generate summary statistics for the pounds per square inch (PSI) of
@@ -50,7 +49,7 @@ below:
 ![Lot Summary](Images/lot_summary.png)
 
 Considering a maximum suspension coil weight variance of 100 PSI, we find that
-while all manufacturing lots as a group meet this requirement with variance of
+while all manufacturing lots as a whole meet this requirement with variance of
 62.29 PSI, the breakdown by individual lots shows that `Lot2` exceeds this
 threshold with a variance of 170.29 PSI.
 
@@ -84,8 +83,8 @@ significant.
 
 ## Study Design: MechaCar vs Competition
 Here we consider a statistical study to quantify the performance of MechaCar
-vehicles relative to its competiton. To analyze the performance, the following
-metrics are of particular interest:
+vehicles relative to their competition. The following metrics are therefore of
+particular interest:
 
 - Fuel Efficiency
 - Horsepower
@@ -98,6 +97,7 @@ alternative hypotheses as follows:
 H_0 : The mean fuel efficiency between MechaCar vehicles and that of its
       competitor are equal, i.e:
       mean_mpg_MechaCar = mean_mpg_competitor
+
 H_a : The mean fuel efficiency between MechaCar vehicles is less than that of
       its competitor, i.e:
       mean_mpg_MechaCar < mean_mpg_competitor
@@ -109,7 +109,7 @@ version since we hope to find the MechaCar fuel efficiency is significantly
 less than that of its competitor.
 
 This analysis would require an additional dataset comparable to
-[`MechaCar_mpg.csv`](Resources/MechaCar_mpg.csv) but for a competitng vehicle
+[`MechaCar_mpg.csv`](Resources/MechaCar_mpg.csv) but for a competing vehicle
 manufacturer. If in addition it included similar parameters such as
 `vehicle_length`, `vehicle_weight`, etc, it could be combined with this data
 set to strength the correlation analysis of fuel efficiency as it relates to

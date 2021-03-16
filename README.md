@@ -81,3 +81,22 @@ Again assuming a 5% significance level, we can thus conclude that the
 differences in mean from the population value for `Lot1` and `Lot2` are
 likely due to chance, however the difference for `Lot3` is statistically
 significant.
+
+## Study Design: MechaCar vs Competition
+Here we consider a statistical study to quantify the performance of MechaCar
+vehicles relative to its competiton. To analyze the performance, the following
+metrics are of particular interest:
+
+- Fuel Efficiency
+- Horsepower
+- Safety Rating
+
+Narrowing on the analysis of fuel efficiency, we can formulate the null and
+alternative hypotheses as follows:
+
+H<sub>0</sub> : The mean fuel efficiency between MechaCar vehicles and that of
+                its competitor are equal
+                \mu<sub>MechaCar</sub> = \mu<sub>competitor</sub>
+H<sub>0</sub> : The mean fuel efficiency between MechaCar vehicles is less
+                than that of its competitor.
+                \mu<sub>MechaCar</sub> < \mu<sub>competitor</sub>

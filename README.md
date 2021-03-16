@@ -53,3 +53,31 @@ Considering a maximum suspension coil weight variance of 100 PSI, we find that
 while all manufacturing lots as a group meet this requirement with variance of
 62.29 PSI, the breakdown by individual lots shows that `Lot2` exceeds this
 threshold with a variance of 170.29 PSI.
+
+## T-Tests on Suspension Coils
+Here we perform a T-Tests to compare the mean suspension coil weight of this
+data set to the population mean of 1,500 PSI. First considering the data set
+as a whole, we find:
+
+![All Lots T-Test](Images/all_lots_t_test.png)
+
+We thus obtain a p-value of 0.06, above the 5% significance level, indicating
+the difference in mean suspension coil PSI between all lots in this data set
+and the population mean is likely due to chance.
+
+Then considering each lot individually, we obtain the following:
+
+![Individual Lots T-Test](Images/individual_lots_t_test.png)
+
+Summarizing the p-values:
+
+| Manufacturing_Lot | p-value     |
+| -----------       | ----------- |
+| Lot1              | 1.00        |
+| Lot2              | 0.61        |
+| Lot3              | 0.04        |
+
+Again assuming a 5% significance level, we can thus conclude that the
+differences in mean from the population value for `Lot1` and `Lot2` are
+likely due to chance, however the difference for `Lot3` is statistically
+significant.

@@ -1,5 +1,5 @@
 # MechaCar_Statistical_Analysis
-R script files for statistical analysis of car manufacturing data to identify
+R Script files for statistical analysis of car manufacturing data to identify
 predictive variables of fuel efficiency, collect summary statistics on
 suspension loads, and analyze the statistical differences among specific
 manufacturing lots relative to the population.
@@ -38,7 +38,7 @@ model will predict the mpg of MechaCar prototypes roughly 71% of the time.
 ## Summary Statistics on Suspension Coils
 Next, we generate summary statistics for the pounds per square inch (PSI) of
 the suspension coils for each vehicle contained in
-[`Suspension_Coils.csv`](Resources/Suspension_Coils.csv). Considering the data
+[`Suspension_Coil.csv`](Resources/Suspension_Coil.csv). Considering the data
 set as a whole, we find the following:
 
 ![Total Summary](Images/total_summary.png)
@@ -50,11 +50,11 @@ below:
 
 Considering a maximum suspension coil weight variance of 100 PSI, we find that
 while all manufacturing lots as a whole meet this requirement with variance of
-62.29 PSI, the breakdown by individual lots shows that `Lot2` exceeds this
-threshold with a variance of 170.29 PSI.
+62.29, the breakdown by individual lots shows that `Lot2` exceeds this
+threshold with a variance of 170.29.
 
 ## T-Tests on Suspension Coils
-Here we perform a T-Tests to compare the mean suspension coil weight of this
+Here we perform a T-Test to compare the mean suspension coil weight of this
 data set to the population mean of 1,500 PSI. First considering the data set
 as a whole, we find:
 

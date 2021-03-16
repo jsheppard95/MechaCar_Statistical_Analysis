@@ -94,9 +94,23 @@ metrics are of particular interest:
 Narrowing on the analysis of fuel efficiency, we can formulate the null and
 alternative hypotheses as follows:
 
-H<sub>0</sub> : The mean fuel efficiency between MechaCar vehicles and that of
-                its competitor are equal
-                \mu<sub>MechaCar</sub> = \mu<sub>competitor</sub>
-H<sub>0</sub> : The mean fuel efficiency between MechaCar vehicles is less
-                than that of its competitor.
-                \mu<sub>MechaCar</sub> < \mu<sub>competitor</sub>
+```
+H_0 : The mean fuel efficiency between MechaCar vehicles and that of its
+      competitor are equal, i.e:
+      mean_mpg_MechaCar = mean_mpg_competitor
+H_a : The mean fuel efficiency between MechaCar vehicles is less than that of
+      its competitor, i.e:
+      mean_mpg_MechaCar < mean_mpg_competitor
+```
+
+Since we would be comparing the difference in distribution means from two
+samples, we would use the two-sample t-test, ensuring to use the one-sided
+version since we hope to find the MechaCar fuel efficiency is significantly
+less than that of its competitor.
+
+This analysis would require an additional dataset comparable to
+[`MechaCar_mpg.csv`](Resources/MechaCar_mpg.csv) but for a competitng vehicle
+manufacturer. If in addition it included similar parameters such as
+`vehicle_length`, `vehicle_weight`, etc, it could be combined with this data
+set to strength the correlation analysis of fuel efficiency as it relates to
+other vehicle parameters.

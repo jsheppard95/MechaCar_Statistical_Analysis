@@ -114,3 +114,19 @@ manufacturer. If in addition it included similar parameters such as
 `vehicle_length`, `vehicle_weight`, etc, it could be combined with this data
 set to strength the correlation analysis of fuel efficiency as it relates to
 other vehicle parameters.
+
+## Usage
+All code is contained in the single R file
+[`MechaCarChallenge.R`](MechaCarChallenge.R). The user can therefore replicate
+these results by first installing R at the
+[Comprehensive R Archive Network (CRAN) server](https://cran.r-project.org/mirrors.html)
+and scrolling down to the U.S links (any U.S mirror will work). After
+installation, one should then navigate to the
+[RStudio Download Page](https://www.rstudio.com/products/rstudio/download/?utm_source=downloadrstudio&utm_medium=Site&utm_campaign=home-hero-cta#download)
+and select the appropriate version for installation. Upon completion, the user
+can clone this repository, launch RStudio, and open the file
+`MechCarChallenge.R` for use in the IDE. From here, the user should set the
+working directory to the root of this repository by selecting the "Files" tab
+of the multi-tool pane and navigating to this repository. Once at the right
+select "More > Set As Working Directory". The user can then run snippets of
+the R file by highlighting desired commands and selecting "Run".

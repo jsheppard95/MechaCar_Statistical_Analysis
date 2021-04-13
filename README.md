@@ -127,7 +127,7 @@ and select the appropriate version for installation. Upon completion, the user
 can clone this repository, launch RStudio, and open the file
 `MechCarChallenge.R` for use in the IDE. From here, the user should set the
 working directory to the root of this repository by selecting the "Files" tab
-of the multi-tool pane, navigating to the root ofthis repository, and
+of the multi-tool pane, navigating to the root of this repository, and
 selecting "More > Set As Working Directory". The user can then run snippets of
 the R file by highlighting desired commands and selecting "Run". Note that
 snippets must run in order for successful completion.
